@@ -1,0 +1,139 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title><!--Pestaña con logo de la pagina-->
+    <link rel="icon" type="image/jpg" href="../../../assets/img/campana.png">
+ 
+</head>
+<!---Inicio de  container-->
+<div class="container">
+    <hr>
+    <div style="color:tomato; 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 35px; margin-top:20px; 
+    margin-bottom:20px; 
+    text-align:center">🍸Reservas🍺</div>
+    <hr>
+</div>
+<!---fin  container-->
+
+<!---Inicio de segundo container-->
+
+<div class="container" align="center" >
+    <div class="row"  >
+        <div  class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"  >
+
+            <form  action="" id="miForm" method="POST" class="form-control"  >
+               
+                <table  class="table-primary table-primary"  >
+
+                    <tr>
+                        <th  >|--- Datos ---|</th>
+                        <th>|--- Digitar Datos ---|</th>
+                    </tr>
+
+                    <tr>
+                        <td>Nombre:</td>
+                        <td><input type="text" name="nombre" id="nombre"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Fecha:</td>
+                        <td><input type="date" id="fecha"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Hora:</td>
+                        <td><input type="time" id="hora"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Número de personas:</td>
+                        <td><select name="numero" id="cantidad">
+                                <option value="1">1 persona</option>
+                                <option value="2">2 personas</option>
+                                <option value="3">3 personas</option>
+                                <option value="4">4 personas</option>
+                                <option value="5">5 personas</option>
+                                <option value="6">6 personas</option>
+                                <option value="7">7 personas</option>
+                                <option value="8">8 personas</option>
+                            </select></td>
+                    </tr>
+
+                </table>
+
+                <button type="button" id="btnagregar" class="btn btn-primary"
+                    onclick="enviar()">Reservar</button>&nbsp;&nbsp;
+                <button type="button" id="btneditar" class="btn btn-warning" onclick="editar()">Editar</button>
+
+            </form>
+        </div>
+    
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+            <div id="cuadro">
+                <table class="table table-basic table-basic" id="mitabla">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th># De personas</th>
+                        <th class="text-center">Opcion</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!---fin segundo container-->
+
+
+<br><br>
+
+<div class="container">
+    <!---inicio de container-->
+    <div class="row">
+        <hr>
+        <div style="color:tomato; 
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+        font-size: 35px; margin-top:20px; 
+        margin-bottom:20px; 
+        text-align:center">🗺️Nuestra ubicación🗺️</div>
+        <hr>
+    </div>
+
+    <div class="row">
+        <!---primera grid-->
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" style="color:tomato; 
+       font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       font-size: 35px; margin-top:20px; 
+       margin-bottom:20px; 
+       text-align:center">Barranquilla</div>
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" style="color:tomato; 
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 35px; margin-top:20px; 
+        margin-bottom:20px; 
+        text-align:center">Bogotá</div>
+
+
+        <iframe class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.6172063405247!2d-74.82130221223214!3d10.916668725769794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeeaa6226bfc7860a!2sComida%20Rapida%20Candela&#39;s%20Fast%20Food!5e0!3m2!1ses!2sco!4v1632415240794!5m2!1ses!2sco"
+            width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+
+        <iframe class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.6808508431427!2d-74.80515828255614!3d10.911841599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef5d3275cdc3321%3A0xf65a61e77061b608!2sRestaurante%20y%20Comidas%20rapidas%20los%20socios!5e0!3m2!1ses!2sco!4v1632415514198!5m2!1ses!2sco"
+            width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
+    <!--Fin de grid-->
+</div>
+<!---fin de container tabla mas mapas-->
